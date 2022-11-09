@@ -1,0 +1,177 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:ital,wght@0,400;1,200&display=swap');
+
+body{
+    font: 18px "Nunito", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(320deg, #de92eb,  #70eaff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card{
+    width: 650px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.profile-card::before{
+    content: " ";
+    position: absolute;
+    background: rgba(255, 255, 255, .15);
+    inset: 0;
+    transform: rotate(-5deg);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.profil-card-logo{
+    margin-bottom: 2rem;
+}
+
+.profile-card-logo img{
+    width: 200px;
+}
+
+.profile-card-logo,
+.profile-card-desc,
+.profile-card-info{
+    text-align: center;
+}
+
+.profile-card a{
+  text-decoration: none;
+  color: #35339a;
+}
+
+.profile-card a:hover{
+  text-decoration: underline;
+}
+
+.profile-card-desc{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-card-desc h1{
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.profile-card-info{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px
+}
+
+.profile-card-info-number{
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.profile-card-info-text{
+  font-size: 16px;
+  opacity: .7;
+}
+
+.profile-card-social{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.profile-card-social a{
+  display: inline-flex;
+  width: 55px;
+  height: 55px;
+  margin: 15px;
+  border-radius: 40%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.facebook{
+  background: linear-gradient(45deg, #3b5998, #0078d7);
+  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.7)
+}
+
+.twitter{
+  background: linear-gradient(45deg, #1da1f2, #0e71c8);
+  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.7)
+}
+
+.instagram{
+  background: linear-gradient(45deg, 
+  #5851db, 
+  #833ab4,
+  #c13584,
+  #e1306c,
+  #fd1d1d);
+  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.7)
+}
+
+.youtube{
+  background: linear-gradient(45deg, #bb3939, #ff4444);
+  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.7)
+}
+
+.github{
+  background: linear-gradient(45deg, #151515, #656565);
+  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.7)
+}
+
+.profile-card-actions{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.profile-card-actions > button {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 15px 0;
+  min-width: 250px;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.blue{
+  background: linear-gradient(45deg, #3b5998, #0078d7);
+  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.7)
+}
+
+.orange{
+  background: linear-gradient(45deg, #d5135a, #f05924);
+  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.7)
+}
+
+/* Responsive */
+
+@media (max-width: 768px){
+  body{
+      padding: 2rem 0;
+  }
+
+  .profile-card{
+      width: 350px;
+      padding: 2rem
+  }
+}
