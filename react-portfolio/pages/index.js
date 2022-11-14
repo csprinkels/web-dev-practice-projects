@@ -3,6 +3,9 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillInstagram, AiFillGithub, AiFillYoutube} from 'react-icons/ai';
 import Image from 'next/image';
 import logo from '../public/logo2.png';
+import design from '../public/design.png';
+import code from '../public/code.png';
+import consulting from '../public/consulting.png';
 
 export default function Home() {
   return (
@@ -48,6 +51,80 @@ export default function Home() {
             <Image src={logo} layout="fill" objectFit="cover"/>
           </div>
 
+          {/* what i offer */}
+          <section>
+            <div>
+              <h3 className="text-3xl py-1">what i offer</h3>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Zǎoshang hǎo zhōngguó xiànzài wǒ yǒu <span className="text-teal-500">BING CHILLING </span>
+              wǒ hěn xǐhuān <span className="text-teal-500">BING CHILLING </span>
+              dànshì sùdù yǔ jīqíng 9 bǐ <span className="text-teal-500">BING CHILLING </span> 
+              sùdù yǔ jīqíng sùdù yǔ jīqíng 9 wǒ zuì xǐhuān
+              suǒyǐ…xiànzài shì yīnyuè shíjiān zhǔnbèi
+              </p>
+            </div>
+
+            {/* cards */}
+            <div className="lg:flex gap-10">
+
+              {/* design */}
+              <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+                <Image src={design} width={100} height={100} />
+                <h3 className="text-lg font-medium pt-8 pb-2  ">
+                  Designs
+                </h3>
+                <p className="py-2">
+                Zǎoshang hǎo zhōngguó xiànzài wǒ yǒu <span className="text-teal-500">BING CHILLING </span>
+                </p>
+                <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
+                <p className="text-gray-800 py-1">Photoshop</p>
+                <p className="text-gray-800 py-1">Illustrator</p>
+                <p className="text-gray-800 py-1">Figma</p>
+              </div>
+
+              {/* code */}
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+                <Image src={code} width={100} height={100} />
+                <h3 className="text-lg font-medium pt-8 pb-2 ">
+                  Code
+                </h3>
+                <p className="py-2">
+                  Zǎoshang hǎo zhōngguó xiànzài wǒ yǒu <span className="text-teal-500">BING CHILLING </span>
+                </p>
+                <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
+                <p className="text-gray-800 py-1">Photoshop</p>
+                <p className="text-gray-800 py-1">Illustrator</p>
+                <p className="text-gray-800 py-1">Figma</p>
+              </div>
+
+              {/* consulting */}
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+                <Image src={consulting} width={100} height={100} />
+                <h3 className="text-lg font-medium pt-8 pb-2 ">CHEEE</h3>
+                <p className="py-2">
+                  Zǎoshang hǎo zhōngguó xiànzài wǒ yǒu <span className="text-teal-500">BING CHILLING </span>
+                </p>
+                <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
+                <p className="text-gray-800 py-1">Photoshop</p>
+                <p className="text-gray-800 py-1">Illustrator</p>
+                <p className="text-gray-800 py-1">Figma</p>
+              </div>
+            </div>
+          </section>
+
+          {/* portfolio */}
+          <section className="py-10">
+            <div>
+              <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Zǎoshang hǎo zhōngguó xiànzài wǒ yǒu <span className="text-teal-500">BING CHILLING </span>
+              wǒ hěn xǐhuān <span className="text-teal-500">BING CHILLING </span>
+              dànshì sùdù yǔ jīqíng 9 bǐ <span className="text-teal-500">BING CHILLING </span> 
+              sùdù yǔ jīqíng sùdù yǔ jīqíng 9 wǒ zuì xǐhuān
+              suǒyǐ…xiànzài shì yīnyuè shíjiān zhǔnbèi
+              </p>
+            </div>
+          </section>
         </section>
       </main>
     </div>
