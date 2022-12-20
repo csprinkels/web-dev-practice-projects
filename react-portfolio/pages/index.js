@@ -42,14 +42,14 @@ export default function Home() {
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">CHRISTIAN SPRINKEL</h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">Frontend Developer</h3>
-            <p className="text-md py-5 leading-8 text-gray-600 dark:text-gray-200 max-w-xl mx-auto md:text-xl">Zǎoshang hǎo zhōngguó xiànzài wǒ yǒu BING CHILLING</p>
+            {/* <p className="text-md py-5 leading-8 text-gray-600 dark:text-gray-200 max-w-xl mx-auto md:text-xl">Zǎoshang hǎo zhōngguó xiànzài wǒ yǒu BING CHILLING</p> */}
           </div>
 
           {/* socials link */}
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-            <AiFillInstagram/>
-            <AiFillGithub/>
-            <AiFillYoutube/>
+            <AiFillInstagram className="cursor-pointer"/>
+            <AiFillGithub className="cursor-pointer"/>
+            <AiFillYoutube className="cursor-pointer"/>
           </div>
 
           {/* logo */}
@@ -61,13 +61,13 @@ export default function Home() {
           <section>
             <div>
               <h3 className="text-3xl py-1 dark:text-white">what i offer</h3>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              {/* <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Zǎoshang hǎo zhōngguó xiànzài wǒ yǒu <span className="text-teal-500">BING CHILLING </span>
               wǒ hěn xǐhuān <span className="text-teal-500">BING CHILLING </span>
               dànshì sùdù yǔ jīqíng 9 bǐ <span className="text-teal-500">BING CHILLING </span> 
               sùdù yǔ jīqíng sùdù yǔ jīqíng 9 wǒ zuì xǐhuān
               suǒyǐ…xiànzài shì yīnyuè shíjiān zhǔnbèi
-              </p>
+              </p> */}
             </div>
 
             {/* cards */}
@@ -75,41 +75,41 @@ export default function Home() {
 
               {/* design */}
               <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-                <Image src={design} width={100} height={100} />
+                <Image class="mx-auto" src={design} width={100} height={100} />
                 <h3 className="text-lg font-medium pt-8 pb-2  ">
                   Designs
                 </h3>
-                <p className="py-2">
-                Zǎoshang hǎo zhōngguó xiànzài wǒ yǒu <span className="text-teal-500">BING CHILLING </span>
-                </p>
+                {/* <p className="py-2">
+                I'll make you the website of your dreams
+                </p> */}
                 <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
                 <p className="text-gray-800 py-1">Photoshop</p>
-                <p className="text-gray-800 py-1">Illustrator</p>
+                <p className="text-gray-800 py-1">Blender</p>
                 <p className="text-gray-800 py-1">Figma</p>
               </div>
 
               {/* code */}
               <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-                <Image src={code} width={100} height={100} />
+                <Image class="mx-auto" src={code} width={100} height={100} />
                 <h3 className="text-lg font-medium pt-8 pb-2 ">
                   Code
                 </h3>
-                <p className="py-2">
+                {/* <p className="py-2">
                   Zǎoshang hǎo zhōngguó xiànzài wǒ yǒu <span className="text-teal-500">BING CHILLING </span>
-                </p>
+                </p> */}
                 <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-                <p className="text-gray-800 py-1">Photoshop</p>
-                <p className="text-gray-800 py-1">Illustrator</p>
-                <p className="text-gray-800 py-1">Figma</p>
+                <p className="text-gray-800 py-1">HTML5, CSS3</p>
+                <p className="text-gray-800 py-1">ReactJS, Tailwind</p>
+                <p className="text-gray-800 py-1">ThreeJS</p>
               </div>
 
               {/* consulting */}
               <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-                <Image src={consulting} width={100} height={100} />
+                <Image class="mx-auto" src={consulting} width={100} height={100} />
                 <h3 className="text-lg font-medium pt-8 pb-2 ">CHEEE</h3>
-                <p className="py-2">
+                {/* <p className="py-2">
                   Zǎoshang hǎo zhōngguó xiànzài wǒ yǒu <span className="text-teal-500">BING CHILLING </span>
-                </p>
+                </p> */}
                 <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
                 <p className="text-gray-800 py-1">Photoshop</p>
                 <p className="text-gray-800 py-1">Illustrator</p>
